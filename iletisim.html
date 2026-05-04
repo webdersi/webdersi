@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="iletisim.css">
+    <title>İletişim - UNLU GARAGE</title>
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" class="baslik">
+        <nav class="ana-menu">
+            <a href="anasayfa.html" class="butonlar">Anasayfa</a>
+            <a href="koleksiyon.html" class="butonlar">Koleksiyon</a>
+            <a href="iletisim.html" class="butonlar">İletişim</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="iletisim-kapak">
+            <div class="konteyner">
+                <h1>BİZE ULAŞIN</h1>
+                <p>Sorularınız, talepleriniz veya hayalinizdeki araç için bizimle iletişime geçin.</p>
+            </div>
+        </section>
+
+        <section class="iletisim-bolumu">
+            <div class="konteyner iletisim-kapsayici">
+                <!-- İletişim Bilgileri (Yan İçerik) -->
+                <aside class="iletisim-yan-bilgi">
+                    <div class="bilgi-kart">
+                        <h3>Adres</h3>
+                        <p>Kahramanmaraş Cad. No:176 Ortahisar / Trabzon</p>
+                    </div>
+                    <div class="bilgi-kart">
+                        <h3>Telefon</h3>
+                        <p>+90 530 067 27 63</p>
+                    </div>
+                    <div class="bilgi-kart">
+                        <h3>E-posta</h3>
+                        <p>info@unlugarage.com</p>
+                    </div>
+                    <div class="bilgi-kart">
+                        <h3>Çalışma Saatleri</h3>
+                        <p>Pazartesi - Cumartesi: 09:00 - 19:00</p>
+                    </div>
+                </aside>
+
+                <!-- İletişim Formu (Ana İçerik) -->
+                <div class="iletisim-ana-alan">
+                    <form class="iletisim-formu">
+                        <div class="form-grubu">
+                            <label for="ad">Ad Soyad</label>
+                            <input type="text" id="ad" placeholder="Adınızı giriniz" required>
+                        </div>
+                        <div class="form-grubu">
+                            <label for="email">E-posta</label>
+                            <input type="email" id="email" placeholder="E-posta adresiniz" required>
+                        </div>
+                        <div class="form-grubu">
+                            <label for="konu">Konu</label>
+                            <input type="text" id="konu" placeholder="Mesajınızın konusu">
+                        </div>
+                        <div class="form-grubu">
+                            <label for="mesaj">Mesaj</label>
+                            <textarea id="mesaj" rows="5" placeholder="Mesajınızı buraya yazınız" required></textarea>
+                        </div>
+                        <div class="form-aksiyonlari">
+                            <button type="submit" class="gonder-butonu">MESAJI GÖNDER</button>
+                            <button type="reset" class="temizle-butonu">FORMU TEMİZLE</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="konteyner">
+            <p>&copy; 2026 UNLU GARAGE - Tüm Hakları Saklıdır.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
