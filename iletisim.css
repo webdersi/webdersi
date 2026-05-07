@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Oswald:wght@500;700&display=swap');
-
 body {
     margin: 0;
     padding: 0;
@@ -7,7 +6,6 @@ body {
     background-color: #f4f7f9;
     color: #333333;
 }
-
 header {
     background-color: rgba(205, 208, 210, 0.8);
     backdrop-filter: blur(15px);
@@ -23,17 +21,13 @@ header {
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-
 .baslik {
     width: 25%;
 }
-
-
 .ana-menu {
     display: flex;
     gap: 15px;
 }
-
 .butonlar {
     display: inline-block;
     padding: 10px 25px;
@@ -47,26 +41,21 @@ header {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-
 img {
     width: 30%;
     border-radius: 10px;
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-
 .butonlar:hover {
     background-color: #1a7cc2;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
-
 .konteyner {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
-
-/* İletişim Kapak */
 .iletisim-kapak {
     margin-top: 100px;
     background-image: linear-gradient(rgba(13, 69, 108, 0.8), rgba(13, 69, 108, 0.9)), url('hero.png');
@@ -76,31 +65,24 @@ img {
     text-align: center;
     color: #ffffff;
 }
-
 .iletisim-kapak h1 {
     font-family: 'Oswald', sans-serif;
     font-size: 4rem;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
-
 .iletisim-kapak p {
     font-size: 1.5rem;
     font-weight: 300;
     opacity: 0.9;
 }
-
-/* İletişim Bölümü Layout */
 .iletisim-bolumu {
     padding: 80px 0;
 }
-
 .iletisim-kapsayici {
     display: flex;
     gap: 50px;
 }
-
-
 .bilgi-kart {
     background-color: #ffffff;
     padding: 30px;
@@ -110,11 +92,9 @@ img {
     border-left: 5px solid #0d456c;
     transition: transform 0.3s ease;
 }
-
 .bilgi-kart:hover {
     transform: translateX(10px);
 }
-
 .bilgi-kart h3 {
     font-family: 'Oswald', sans-serif;
     color: #0d456c;
@@ -122,14 +102,11 @@ img {
     margin-bottom: 10px;
     text-transform: uppercase;
 }
-
 .bilgi-kart p {
     margin: 0;
     font-size: 18px;
     color: #666;
 }
-
-/* Main Alan - Form */
 .iletisim-ana-alan {
     width: 800px;
     background-color: #ffffff;
@@ -137,18 +114,15 @@ img {
     border-radius: 15px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
 }
-
 .form-grubu {
     margin-bottom: 20px;
 }
-
 .form-grubu label {
     display: block;
     font-weight: bold;
     margin-bottom: 8px;
     color: #0d456c;
 }
-
 .form-grubu input,
 .form-grubu textarea {
     width: 100%;
@@ -158,12 +132,10 @@ img {
     font-family: inherit;
     font-size: 16px;
 }
-
 .form-aksiyonlari {
     display: flex;
     gap: 15px;
 }
-
 .gonder-butonu {
     width: 420px;
     background-color: #0d456c;
@@ -177,7 +149,6 @@ img {
     transition: all 0.3s ease;
     font-family: 'Oswald', sans-serif;
 }
-
 .temizle-butonu {
     width: 200px;
     background-color: transparent;
@@ -190,22 +161,17 @@ img {
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: 'Oswald', sans-serif;
-
 }
-
 .gonder-butonu:hover {
     background-color: #1a7cc2;
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
-
 .temizle-butonu:hover {
     background-color: #f4f4f4;
     color: #333;
     border-color: #999;
 }
-
-/* Footer */
 footer {
     background-color: #0d456c;
     color: #ffffff;
@@ -213,17 +179,51 @@ footer {
     text-align: center;
     font-size: 16px;
 }
-
 footer p {
     margin: 0;
     opacity: 0.8;
 }
-
 @media (max-width: 992px) {
-
     .tanitim-blok,
     .tanitim-blok:nth-child(even) {
         flex-direction: column;
         text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0;
+        width: 100%;
+    }
+    .ana-menu {
+        margin-top: 15px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .butonlar {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    .iletisim-kapak h1 {
+        font-size: 2.5rem;
+    }
+    .iletisim-kapsayici {
+        flex-direction: column;
+    }
+    .iletisim-ana-alan {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .form-aksiyonlari {
+        flex-direction: column;
+    }
+    .gonder-butonu, .temizle-butonu {
+        width: 100%;
     }
 }

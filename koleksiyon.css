@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Oswald:wght@500;700&display=swap');
-
 body {
     margin: 0;
     padding: 0;
@@ -7,7 +6,6 @@ body {
     background-color: #f4f7f9;
     color: #333333;
 }
-
 header {
     background-color: rgba(205, 208, 210, 0.8);
     backdrop-filter: blur(15px);
@@ -23,17 +21,13 @@ header {
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-
 .baslik {
     width: 25%;
 }
-
-
 .ana-menu {
     display: flex;
     gap: 15px;
 }
-
 .butonlar {
     display: inline-block;
     padding: 10px 25px;
@@ -47,22 +41,17 @@ header {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-
 .butonlar:hover {
     background-color: #1a7cc2;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
-
 .konteyner {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
-
-/* Koleksiyon Kapak */
 .koleksiyon-kapak {
-
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('koleksiyon-bg.png');
     background-size: cover;
     background-position: center;
@@ -75,35 +64,28 @@ header {
     text-align: center;
     color: #ffffff;
 }
-
 .koleksiyon-kapak h1 {
     font-family: 'Oswald', sans-serif;
     font-size: 4rem;
     margin-bottom: 20px;
 }
-
 .koleksiyon-kapak p {
     font-size: 1.5rem;
     font-weight: 300;
 }
-
-/* Araç Listesi */
 .arac-listesi {
     padding: 80px 0;
 }
-
 img {
     width: 30%;
     border-radius: 10px;
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-
 .arac-izgara {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 30px;
 }
-
 .arac-kart {
     background-color: #ffffff;
     border-radius: 15px;
@@ -111,23 +93,19 @@ img {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     transition: all 0.4s ease;
 }
-
 .arac-kart:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
 }
-
 .arac-resim {
     height: 250px;
     background-size: cover;
     background-position: center;
     position: relative;
 }
-
 .arac-bilgi {
     padding: 25px;
 }
-
 .arac-bilgi h3 {
     font-family: 'Oswald', sans-serif;
     font-size: 24px;
@@ -135,7 +113,6 @@ img {
     margin-bottom: 15px;
     color: #0d456c;
 }
-
 .ozellikler {
     display: flex;
     gap: 15px;
@@ -144,20 +121,17 @@ img {
     color: #888;
     font-weight: bold;
 }
-
 .ozellikler span {
     background-color: #f0f4f7;
     padding: 5px 12px;
     border-radius: 20px;
 }
-
 .fiyat {
     font-size: 22px;
     font-weight: 700;
     color: #0d456c;
     margin-bottom: 20px;
 }
-
 .detay-buton {
     display: inline-block;
     width: 100%;
@@ -172,29 +146,46 @@ img {
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1px;
 }
-
 .detay-buton:hover {
     background-color: #1a7cc2;
 }
-
-/* Footer */
 footer {
     background-color: #0d456c;
     color: #ffffff;
     padding: 50px 0;
     text-align: center;
 }
-
 footer p {
     margin: 0;
     opacity: 0.8;
 }
-
 @media (max-width: 992px) {
-
     .tanitim-blok,
     .tanitim-blok:nth-child(even) {
         flex-direction: column;
         text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0;
+        width: 100%;
+    }
+    .ana-menu {
+        margin-top: 15px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .butonlar {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    .koleksiyon-kapak h1 {
+        font-size: 2.5rem;
     }
 }

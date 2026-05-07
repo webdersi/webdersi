@@ -1,13 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="tr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="iletisim.css">
     <title>İletişim - UNLU GARAGE</title>
 </head>
-
 <body>
     <header>
         <img src="logo.png" class="baslik">
@@ -17,22 +15,19 @@
             <a href="iletisim.html" class="butonlar">İletişim</a>
         </nav>
     </header>
-
     <main>
         <section class="iletisim-kapak">
             <div class="konteyner">
-                <h1>BİZE ULAŞIN</h1>
-                <p>Sorularınız, talepleriniz veya hayalinizdeki araç için bizimle iletişime geçin.</p>
+                <h1>TEST SÜRÜŞÜ RANDEVUSU</h1>
+                <p>Hayalinizdeki aracı yola çıkarmak için hemen test sürüş randevunuzu oluşturun.</p>
             </div>
         </section>
-
         <section class="iletisim-bolumu">
             <div class="konteyner iletisim-kapsayici">
-                <!-- İletişim Bilgileri (Yan İçerik) -->
                 <aside class="iletisim-yan-bilgi">
                     <div class="bilgi-kart">
                         <h3>Adres</h3>
-                        <p>Kahramanmaraş Cad. No:176 Ortahisar / Trabzon</p>
+                        <p>Kahramanmaras Cad. No:176 Ortahisar / Trabzon</p>
                     </div>
                     <div class="bilgi-kart">
                         <h3>Telefon</h3>
@@ -47,8 +42,6 @@
                         <p>Pazartesi - Cumartesi: 09:00 - 19:00</p>
                     </div>
                 </aside>
-
-                <!-- İletişim Formu (Ana İçerik) -->
                 <div class="iletisim-ana-alan">
                     <form class="iletisim-formu">
                         <div class="form-grubu">
@@ -56,19 +49,32 @@
                             <input type="text" id="ad" placeholder="Adınızı giriniz" required>
                         </div>
                         <div class="form-grubu">
-                            <label for="email">E-posta</label>
-                            <input type="email" id="email" placeholder="E-posta adresiniz" required>
+                            <label for="iletisim_bilgisi">Telefon / E-posta</label>
+                            <input type="text" id="iletisim_bilgisi" placeholder="Size ulaşabileceğimiz bir numara veya e-posta" required>
                         </div>
                         <div class="form-grubu">
-                            <label for="konu">Konu</label>
-                            <input type="text" id="konu" placeholder="Mesajınızın konusu">
+                            <label for="arac">Test Edilecek Araç</label>
+                            <select id="arac" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-family: inherit; font-size: 16px; background-color: #fff; color: #333;" required>
+                                <option value="">Araç Seçiniz</option>
+                                <option value="porsche">Porsche 911 Carrera S</option>
+                                <option value="ferrari">Ferrari F8 Tributo</option>
+                                <option value="mercedes">Mercedes-AMG GT</option>
+                                <option value="bmw">BMW M8 COMPETITION</option>
+                                <option value="audi">Audi R8 V10 Performance</option>
+                                <option value="lambo">Lamborghini Huracan</option>
+                                <option value="diger">Diğer Modeller</option>
+                            </select>
                         </div>
                         <div class="form-grubu">
-                            <label for="mesaj">Mesaj</label>
-                            <textarea id="mesaj" rows="5" placeholder="Mesajınızı buraya yazınız" required></textarea>
+                            <label for="tarih">Tercih Edilen Tarih</label>
+                            <input type="date" id="tarih" required>
+                        </div>
+                        <div class="form-grubu">
+                            <label for="mesaj">Ek Notlar</label>
+                            <textarea id="mesaj" rows="3" placeholder="Saat tercihiniz veya özel bir isteginiz varsa belirtebilirsiniz."></textarea>
                         </div>
                         <div class="form-aksiyonlari">
-                            <button type="submit" class="gonder-butonu">MESAJI GÖNDER</button>
+                            <button type="submit" class="gonder-butonu">RANDEVU TALEBİ GÖNDER</button>
                             <button type="reset" class="temizle-butonu">FORMU TEMİZLE</button>
                         </div>
                     </form>
@@ -76,12 +82,10 @@
             </div>
         </section>
     </main>
-
     <footer>
         <div class="konteyner">
             <p>&copy; 2026 UNLU GARAGE - Tüm Hakları Saklıdır.</p>
         </div>
     </footer>
 </body>
-
 </html>
